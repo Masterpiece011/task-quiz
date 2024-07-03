@@ -1,0 +1,24 @@
+.footer {
+    width: 100%;
+}
+
+.footer__lines-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__left-line, 
+.footer__right-line {
+    height: 5px;
+    width: 500px;
+}
+
+.footer__left-line {
+    background-color: #E9262D;
+}
+
+.footer__right-line {
+    background-color: #73BE43;
+}

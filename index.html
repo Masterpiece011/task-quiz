@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper container">
+            <button>
+                <img src="./img/menu-icon.svg" alt="menu-icon">
+            </button>
+            <p class="js-header-title">Заголовок</p>
+        </div>
+        <div class="header__lines">
+            <div class="header__lines-wrapper">
+                <div class="header__left-line"></div>
+                <div class="header__right-line"></div>
+            </div>
+            <div class="header__progress-bar js-progress-bar"></div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__content container js-main-content">
+
+                <div class="main__quiz active js-quiz js-page">
+                    <h2>Тестирование</h2>
+                    <p>Осталось пройти небольшой тест, который покажет, как хорошо ты усвоил материал</p>
+                    <ul class="main__quiz-faq">
+                        <li>Для успешного прохождения нужно правильно ответить минимум на 7 вопросов из 10</li>
+                        <li>На прохождение теста дается 3 попытки</li>
+                    </ul>
+                    <button class="main__quiz-start-btn js-quiz-start-btn">
+                        Начать
+                        <img src="./img/next-btn-icon.svg" alt="start-btn">
+                    </button>
+                </div>
+
+                <div class="main__quiz-test js-quiz-test js-page">
+                    <h2>Тестирование</h2>
+                    <p class="js-question">Вопрос?</p>
+                    <ul class="main__quiz-answers js-list-answers">
+                        <li>
+                            <input id="choice1" type="radio" name="answer">
+                            <label for="choice1">Ответ 1</label>
+                        </li>
+                        <li>
+                            <input id="choice2" type="radio" name="answer">
+                            <label for="choice2">Ответ 2</label>
+                        </li>
+                        <li>
+                            <input id="choice3" type="radio" name="answer">
+                            <label for="choice3">Ответ 3</label>
+                        </li>
+                        <li>
+                            <input id="choice4" type="radio" name="answer">
+                            <label for="choice4">Ответ 4</label>
+                        </li>
+                        <li>
+                            <input id="choice5" type="radio" name="answer">
+                            <label for="choice5">Ответ 5</label>
+                        </li>
+                    </ul>
+                    <button class="main__accept-btn js-accept-btn">Принять</button>
+                </div>
+
+                <div class="main__quiz-results js-quiz-results js-page">
+                    <h2>Результаты тестирования</h2>
+                    <div class="main__current-user">
+                        <p>Константин Константинопольский</p>
+                        <p class="js-current-date">20.01.2020</p>
+                    </div>
+                    <div class="main__results-wrapper">
+                        <div class="main__results">
+                            <p>Результаты <span class="js-try-number">1-й</span> попытки</p>
+                            <div class="main___results-view">
+                                <p class="out-of js-out-of"></p>
+                                <p class="percentage js-percentage">0%</p>
+                            </div>
+                        </div>
+                        <div class="main__results main__best-result js-best-result">
+                            <p>Лучший результат</p>
+                            <div class="main___results-view">
+                                <p class="percentage percentage-best js-percentage-best">0%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="main__quiz-results-message js-results-message">Не очень хороший результат, рекомендуем изучить курс еще раз.</p>
+                    <button class="main__results-refresh-btn js-refresh-btn active">
+                        Повторить тест
+                        <img src="./img/refresh-icon.svg" alt="refresh-icon">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__lines-wrapper">
+            <div class="footer__left-line"></div>
+            <div class="footer__right-line"></div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
